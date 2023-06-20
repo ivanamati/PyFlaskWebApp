@@ -1,0 +1,49 @@
+body {
+    background-color: slategray;
+    text-align: center;
+    font: Shanti;
+    color: white;
+    background-image: url("https://images.pexels.com/photos/1376766/nature-milky-way-galaxy-space-1376766.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: white;
+    font: Shanti;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+img {
+    padding-left: 20px;
+    margin: 60px 0 30px 0;
+    width: 250px;
+}
+
+input {
+    width: 300px;
+    margin: 20px 20px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-family: Shanti;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  
+  input:focus {
+      outline: none;
+      border: solid 5px #00FFCE;
+  }
+  
+  #greet {
+      background-color: PaleVioletRed;
+      border:  none;
+      width:  200px;
+      color: white;
+  }
+  
+  #greet:hover {
+      background-color: MediumVioletRed;
+  }

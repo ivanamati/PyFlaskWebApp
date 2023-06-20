@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Say hello</title>
+    <link rel="stylesheet" href="{{ 
+        url_for('static', filename='css/main.css')}}">
 </head>
 
-#content of the page starts here
 <body>
-    <h1>My first Home Page</h1>
-    <br>
-    #
-    <img src="https://images.pexels.com/photos/1376766/nature-milky-way-galaxy-space-1376766.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+    <img src="https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png">
     <br>
     <form action ="greet" method="post">
-        <p>what's your name? type it in the box and send it</p>
+        {% for message in get_flashed_messages() %}
+             <p>{{ message }}</p>
+         {% endfor %}
+        <br>
         <input type="text" name="name_input">
         <br>
         <input type="submit" name="GREET" id="greet">
         <br>
 
-    <div>
-    <br>
-    {% block content %}
-    <h1>Dio za block content</h1>
-    <p>Hello, {{ name }}!</p>
-    {% endblock %}
-    </div>
     <script type="text/javascript" 
     src="{{ url_for('static', filename= 'index.js') }}"
     ></script>
