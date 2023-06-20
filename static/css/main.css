@@ -10,7 +10,7 @@ body {
 
 p {
     color: white;
-    font: Shanti;
+    font-family: Shanti;
     font-size: 1.2em;
     margin: 20px;
 }
@@ -41,9 +41,10 @@ input {
       background-color: PaleVioletRed;
       border:  none;
       width:  200px;
-      color: white;
+      color: rgb(255, 255, 255);
   }
   
   #greet:hover {
       background-color: MediumVioletRed;
+      cursor: pointer;
   }

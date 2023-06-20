@@ -20,7 +20,7 @@ def greet():
     name_from_user = request.form['name_input']
 
     # flash pozdravna poruka 
-    flash("Hi "+ str(name_from_user) + ", great to see you!")
+    flash("Hi "+ str(name_from_user) + ", welcome!")
 
     return render_template("new_index.html")
 
