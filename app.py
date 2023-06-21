@@ -8,6 +8,7 @@ app.secret_key = "kljuc"
 #app.register_blueprint(views, url_prefix="/views")
 app.register_blueprint(views)
 
+
 # @app.route("/")
 # def home():
 #     return "this is the home page"

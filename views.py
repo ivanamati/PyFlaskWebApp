@@ -2,6 +2,8 @@ from flask import Blueprint, render_template, request, flash, jsonify, redirect,
 
 
 views = Blueprint(__name__,"views")
+
+
 ####################################################
 # ROUTES za new_index.html
 @views.route("/hello")
@@ -10,6 +12,7 @@ def index():
     # poput slanja obrasca ili prijave u sustav. 
     flash("what's your name?")
     return render_template("index.html", name="Ivana")
+
 
 @views.route("/greet", methods=["POST","GET"])
 def greet():
